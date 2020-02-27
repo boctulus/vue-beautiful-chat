@@ -162,7 +162,7 @@ export default {
   max-height: 590px;
   position: fixed;
   left: 25px;
-  bottom: 100px;
+  bottom: 90px;
   box-sizing: border-box;
   box-shadow: 0px 7px 40px 2px rgba(148, 149, 150, 0.1);
   background: white;

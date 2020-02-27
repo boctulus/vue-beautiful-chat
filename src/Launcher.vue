@@ -221,7 +221,7 @@ export default {
   background-repeat: no-repeat;
   position: fixed;
   left: 25px;
-  bottom: 25px;
+  bottom: 15px;
   border-radius: 50%;
   box-shadow: none;
   transition: box-shadow 0.2s ease-in-out;
@@ -244,7 +244,7 @@ export default {
   height: 60px;
   position: fixed;
   left: 25px;
-  bottom: 25px;
+  bottom: 15px;
   transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
 }
 
