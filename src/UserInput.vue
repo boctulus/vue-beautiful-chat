@@ -146,7 +146,8 @@ export default {
     },
     focusUserInput() {
       this.$nextTick(() => {
-        this.$refs.userInput.focus();
+        if (typeof this.$refs.userInput !== 'undefined')
+          this.$refs.userInput.focus();
       })
     },
     _submitSuggestion(suggestion) {
@@ -288,7 +289,6 @@ export default {
   right: 30px;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
 }
 
 .sc-user-input--button:first-of-type {

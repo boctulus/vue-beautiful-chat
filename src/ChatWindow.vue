@@ -1,7 +1,6 @@
 <template>
   <div class="sc-chat-window" :class="{opened: isOpen, closed: !isOpen}">
     <Header
-      :showCloseButton="showCloseButton"
       :title="title"
       :imageUrl="titleImageUrl"
       :onClose="onClose"
@@ -76,10 +75,6 @@ export default {
     showEmoji: {
       type: Boolean,
       default: false
-    },
-    showCloseButton: {
-      type: Boolean,
-      default: true
     },
     showFile: {
       type: Boolean,
@@ -166,7 +161,7 @@ export default {
   height: calc(100% - 120px);
   max-height: 590px;
   position: fixed;
-  right: 25px;
+  left: 25px;
   bottom: 100px;
   box-sizing: border-box;
   box-shadow: 0px 7px 40px 2px rgba(148, 149, 150, 0.1);
@@ -174,29 +169,16 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 0.3s ease-in-out;
   border-radius: 10px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  animation: fadeIn;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in-out;
+  z-index: 10000;
 }
 
 .sc-chat-window.closed {
   opacity: 0;
   display: none;
   bottom: 90px;
-}
-
-@keyframes fadeIn {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-
-  100% {
-    display: flex;
-    opacity: 1;
-  }
 }
 
 .sc-message--me {
