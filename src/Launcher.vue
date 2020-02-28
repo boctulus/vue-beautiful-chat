@@ -121,7 +121,7 @@ export default {
     },
     placeholder: {
       type: String,
-      default: 'Escriba su mesaje...'
+      default: 'Escriba el mensaje...'
     },
     showTypingIndicator: {
       type: String,
