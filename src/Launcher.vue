@@ -226,6 +226,7 @@ export default {
   box-shadow: none;
   transition: box-shadow 0.2s ease-in-out;
   cursor: pointer;
+  z-index:10000;
 }
 
 .sc-launcher:before {
